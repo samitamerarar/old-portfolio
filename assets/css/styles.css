@@ -549,3 +549,30 @@ img {
     right: 10%;
   }
 }
+
+/**************************************/
+/* for Scroll Reveal */
+/**************************************/
+.home__title,
+.home__title-occupation,
+.button,
+.home__download-cv,
+.home__img,
+.home__social-icon
+/* .about__img,
+.about__text,
+.about__subtitle,
+.about__row,
+.about__location,
+.about__description,
+.skills__subtitle,
+.skills__text,
+.skills__data,
+.skills__img,
+.projects__subtitle,
+.projects__img,
+.projects__skills,
+.contact__social-icon,
+.contact__social-icon-location */ {
+  visibility: hidden;
+}
