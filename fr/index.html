@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Sami Arar</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Sami Arar</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projets</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contacter</a></li>
+            <li class="nav__item nav__resume">
+              <a
+                href=""
+                onclick="return confirmDownloadResumeFrench()"
+                class="nav__link nav__resume"
+                >CV</a
+              >
+            </li>
+            <a href="../index.html">
+              <li>
+                <small class="home__language">EN</small>
+              </li></a
+            >
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Bonjour,<br />Je suis <span class="home__title-color">Sami</span>
+            <h2 class="home__title-occupation">
+              Étudiant en Génie <br />
+              Logiciel
+            </h2>
+            <h3 class="home__title-occupation">Graduation: Juin 2021</h3>
+          </h1>
+
+          <div style="display: inline-grid">
+            <a href="#contact" class="button">Contacter</a>
+            <a href="../assets/resume/sami_arar_cv_fr.pdf" class="home__download-cv"
+              >Télécharger CV</a
+            >
+          </div>
+        </div>
+
+        <div class="home__social">
+          <a href="https://linkedin.com/in/samitamerarar" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/samitamerarar" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="mailto: sami.t.arar@hotmail.com" class="home__social-icon"
+            ><i class="bx bx-mail-send"></i
+          ></a>
+        </div>
+
+        <div class="home__img">
+          <img src="../assets/img/portfolio-sami.png" alt="" />
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">À propos de moi</h2>
+
+        <div class="about__container bd-grid">
+          <!-- <div class="about__img">
+            <img src="../assets/img/about.jpg" alt="" />
+          </div> -->
+
+          <div>
+            <p class="about__text">
+              Je suis présentement un étudiant en Ingénierie logicielle à Polytechnique Montréal. Je
+              graduerais en juin 2021. Je me trouve comme une personne créative, patiente et aillant
+              la capacité d’analyse. Mes expériences de travail ont contribués à améliorer ma
+              communication et mes compétences interpersonnelles. Je suis passionné par la
+              programmation en full stack et j'ai dû m'enseigner de ne jamais cesser d'apprendre.
+            </p>
+          </div>
+
+          <h2 class="about__subtitle">Expérience de travail</h2>
+          <div>
+            <div class="about__row">
+              <h3 class="about__position">Ingénierie Logicielle, Stage</h3>
+              <h4 class="about__date">Mai - Août 2020</h4>
+            </div>
+            <h4 class="about__location">Matrox Electronic Systems Ltd., Dorval, Québec</h4>
+
+            <p class="about__description">
+              Tester les algorithmes de traitement d’images et de vision artificielle de la
+              librairie MIL (Matrox Imaging Library) développée en C/C++/C#. Implémentation
+              d’algorithmes d’assurance qualité logicielle (SQA) pour la librairie MIL en C++ et
+              Python. Utilisation de la librairie MIL pour l’analyse et le traitement d’images en
+              C++ pour la génération d’images de code-barres 1D et 2D. Travail en collaboration avec
+              des outils comme SVN/Git, Jira, Confluence et Visual Studio.
+            </p>
+          </div>
+
+          <div>
+            <div class="about__row">
+              <h3 class="about__position">Analyste d'Affaires</h3>
+              <h4 class="about__date">Jan. - Août 2019</h4>
+            </div>
+            <h4 class="about__location">Pratt & Whitney Canada, Longueuil, Québec</h4>
+
+            <p class="about__description">
+              Déployer plusieurs fonctionnalités et projets visant à transformer l’entreprise et à
+              améliorer sa plateforme eBusiness. Travailler en méthodes Agile, Scrum et Kanban en
+              sprints et planifier un Backlog avec User stories à jour sur Sharepoint. Coordonner
+              des ateliers avec des unités d’affaires pour définir, documenter et prioriser les
+              besoins d’affaires et techniques. Gérer les besoins des clients, gérer risques et
+              impacts et résolution de problèmes techniques de la plateforme eBusiness. Utilisation
+              de bases de données comme SAP, CRM et ODS avec requêtes SQL (MS Access). Supporter
+              l’équipe de développement, définir et documenter des scénarios d’utilisations, tester
+              et valider les fonctionnalités.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Compétences</h2>
+
+        <h2 class="skills__subtitle bd-grid">Compétences professionnelles</h2>
+        <p class="skills__text bd-grid">
+          Je suis un excellent communicateur qui est motivé par l'esprit d'équipe et mon leadership.
+          Je parle l'anglais et le francais.
+        </p>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5 / CSS3</span>
+              </div>
+              <div class="skills__bar"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-angular skills__icon" style="margin-right: 0"></i>
+                <i class="bx bxl-react skills__icon"></i>
+                <span class="skills__name">Angular & React</span>
+              </div>
+              <div class="skills__bar"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">Javascript (ES6+) & Typescript</span>
+              </div>
+              <div class="skills__bar"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-nodejs skills__icon"></i>
+                <span class="skills__name">Express - Node.js</span>
+              </div>
+              <div class="skills__bar"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-server skills__icon"></i>
+                <span class="skills__name">REST API • Socket.IO</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-android skills__icon"></i>
+                <span class="skills__name">Kotlin (Android Studio)</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-windows skills__icon"></i>
+                <span class="skills__name">C++/C# (Visual Studio 2019)</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-windows skills__icon"></i>
+                <span class="skills__name">.NET/.NET Core</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-data skills__icon"></i>
+                <span class="skills__name">SQL • MongoDB • Firebase</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-git-repo-forked skills__icon"></i>
+                <span class="skills__name">Git & SVN</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== PROJECTS =====-->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projets</h2>
+
+        <h2 class="projects__subtitle bd-grid">Projets personnels</h2>
+
+        <div class="projects__container bd-grid">
+          <div>
+            <a href="" rel="noopener noreferrer" target="_blank">
+              <div class="projects__img">
+                <img src="../assets/img/sushi-takeout.jpg" alt="" />
+              </div>
+            </a>
+            <div class="projects__skills">
+              Suivi de commande en temps réel<br /><small>EJS • NodeJS • MongoDB • Socket.IO</small>
+            </div>
+          </div>
+
+          <div>
+            <a
+              href="https://chess-game-angular.herokuapp.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div class="projects__img">
+                <img src="../assets/img/chess-game.jpg" alt="" />
+              </div>
+            </a>
+            <div class="projects__skills">
+              Jeu d'échecs à 2 joueurs<br /><small>Angular • NodeJS • Socket.IO</small>
+            </div>
+          </div>
+
+          <div>
+            <a
+              href="https://samitamerarar.github.io/top-news/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div class="projects__img">
+                <img src="../assets/img/top-news.jpg" alt="" />
+              </div>
+            </a>
+            <div class="projects__skills">
+              Nouvelles avec fonctionnalité recherche<br /><small>React • NodeJS • NewsAPI</small>
+            </div>
+          </div>
+
+          <div>
+            <a
+              href="https://github.com/samitamerarar?tab=repositories"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div class="projects__img">
+                <img src="../assets/img/view-more-fr.jpg" alt="" />
+              </div>
+            </a>
+            <div class="projects__skills">Github<br /><small>plus à venir</small></div>
+          </div>
+
+          <div class="projects__img">
+            <img src="" alt="" />
+          </div>
+          <div class="projects__img">
+            <img src="" alt="" />
+          </div>
+        </div>
+
+        <h2 id="school-projects__subtitle" class="projects__subtitle bd-grid">
+          Projets académiques
+        </h2>
+
+        <div class="projects__container bd-grid">
+          <div>
+            <a href="https://appartogo.com/" rel="noopener noreferrer" target="_blank">
+              <div class="projects__img">
+                <img src="../assets/img/project4-fr.jpg" alt="" />
+              </div>
+            </a>
+            <div class="projects__skills">
+              Plateforme de recherche d'appartements à louer<br /><small
+                >.NET Core • C# • React</small
+              >
+            </div>
+          </div>
+
+          <div>
+            <a
+              href="https://github.com/samitamerarar/Year-3-Project_WPF_and_Android-Project"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div class="projects__img">
+                <img src="../assets/img/project3-fr.jpg" alt="" />
+              </div>
+            </a>
+            <div class="projects__skills">
+              Jeu de dessin multiplateforme<br /><small>Kotlin • C# • NodeJS • MongoDB</small>
+            </div>
+          </div>
+
+          <div>
+            <a
+              href="https://github.com/samitamerarar/Year-2-Project_MEAN_Stack-Project"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div class="projects__img">
+                <img src="../assets/img/project2-fr.jpg" alt="" />
+              </div>
+            </a>
+            <div class="projects__skills">
+              Jeu de course 3D & Mots croisés<br /><small
+                >Angular • Typescript • NodeJS • MongoDB</small
+              >
+            </div>
+          </div>
+
+          <div>
+            <a
+              href="https://github.com/samitamerarar/Year-1-Project_Programming_AVR_Robot-Project"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div class="projects__img">
+                <img src="../assets/img/project1-fr.jpg" alt="" />
+              </div>
+            </a>
+            <div class="projects__skills">Robot<br /><small>C / C++</small></div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contacter</h2>
+
+        <div class="contact__container">
+          <div>
+            <a href="mailto: sami.t.arar@hotmail.com" class="contact__social-icon"
+              ><i class="bx bx-mail-send"></i
+              ><span class="contact__social-icon-text">&nbsp;&nbsp;Email</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/samitamerarar" class="contact__social-icon"
+              ><i class="bx bxl-github"></i
+              ><span class="contact__social-icon-text">&nbsp;&nbsp;Github</span></a
+            >
+          </div>
+          <div>
+            <a href="https://linkedin.com/in/samitamerarar" class="contact__social-icon"
+              ><i class="bx bxl-linkedin"></i
+              ><span class="contact__social-icon-text">&nbsp;&nbsp;LinkedIn</span></a
+            >
+          </div>
+          <div class="contact__social-icon-location">
+            <i class="bx bx-map"></i><small>Laval, QC, Canada</small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <small class="footer__copyright">© 2020 Sami Arar.</small>
+      <div class="footer__social">
+        <a href="https://linkedin.com/in/samitamerarar" class="footer__social-icon"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://github.com/samitamerarar" class="footer__social-icon"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="mailto: sami.t.arar@hotmail.com" class="footer__social-icon"
+          ><i class="bx bx-mail-send"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== HIDE HASHES IN URL =====-->
+    <script>
+      $(".nav__link, .button").on("click", function (e) {
+        // Prevent default anchor click behavior
+        e.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+        // Using jQuery's animate() method to add page scroll
+        $("html, body")
+          .stop()
+          .animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            100
+          );
+      });
+    </script>
+
+    <!--===== CLEAR URL =====-->
+    <script>
+      $(document).ready(function () {
+        window.history.replaceState({}, document.title, "/" + "fr");
+      });
+    </script>
+
+    <!--===== MAIN JS =====-->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
