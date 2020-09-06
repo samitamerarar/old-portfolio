@@ -79,3 +79,9 @@ function confirmDownloadResumeFrench() {
 
   return false;
 }
+
+function comingSoon() {
+  confirm("Télécharger le CV en fichier PDF?");
+
+  return false;
+}
