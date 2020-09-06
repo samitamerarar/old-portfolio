@@ -37,10 +37,10 @@ const sr = ScrollReveal({
 /*SCROLL HOME*/
 sr.reveal(".home__title", {});
 sr.reveal(".home__title-occupation", {});
-sr.reveal(".button", { delay: 300 });
-sr.reveal(".home__download-cv", { delay: 200 });
-sr.reveal(".home__img", { delay: 400 });
-sr.reveal(".home__social-icon", { interval: 200 });
+sr.reveal(".button", { delay: 200 });
+sr.reveal(".home__download-cv", { delay: 100 });
+sr.reveal(".home__img", { delay: 300 });
+sr.reveal(".home__social-icon", { interval: 100 });
 
 /*SCROLL ABOUT*/
 sr.reveal(".about__img", {});
@@ -53,17 +53,16 @@ sr.reveal(".about__description", { delay: 200 });
 /*SCROLL SKILLS*/
 sr.reveal(".skills__subtitle", {});
 sr.reveal(".skills__text", {});
-sr.reveal(".skills__data", { interval: 200 });
-sr.reveal(".skills__img", { delay: 600 });
+sr.reveal(".skills__data", { interval: 100 });
 
 /*SCROLL PROJECTS*/
 sr.reveal(".projects__subtitle", {});
-sr.reveal(".projects__img", { interval: 200 });
-sr.reveal(".projects__skills", { interval: 160 });
+sr.reveal(".projects__img", { interval: 100 });
+sr.reveal(".projects__skills", { interval: 80 });
 
 /*SCROLL CONTACT*/
-sr.reveal(".contact__social-icon", { interval: 200 });
-sr.reveal(".contact__social-icon-location", { delay: 600 });
+sr.reveal(".contact__social-icon", { interval: 100 });
+sr.reveal(".contact__social-icon-location", { delay: 300 });
 
 function confirmDownloadResume() {
   if (confirm("Download the Resume in PDF format?")) {

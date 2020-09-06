@@ -278,10 +278,14 @@ img {
 .about__subtitle {
   text-align: left;
 }
+.about__text {
+  text-align: justify;
+  text-indent: 2rem;
+}
 .about__position {
   margin: 0;
   text-align: left;
-  font-weight: var(--font-normal);
+  font-weight: var(--font-semi);
 }
 .about__location {
   margin: 0;
@@ -298,7 +302,8 @@ img {
   font-style: italic;
 }
 .about__description {
-  text-align: left;
+  text-align: justify;
+  font-size: 0.888rem;
 }
 .about__row {
   display: flex;
