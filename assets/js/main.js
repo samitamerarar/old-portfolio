@@ -81,7 +81,7 @@ function confirmDownloadResumeFrench() {
 }
 
 function comingSoon() {
-  confirm("Télécharger le CV en fichier PDF?");
+  confirm("Coming Soon!");
 
   return false;
 }
