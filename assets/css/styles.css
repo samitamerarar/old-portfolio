@@ -330,6 +330,8 @@ img {
 }
 .skills__text {
   margin-bottom: var(--mb-4);
+  text-align: justify;
+  text-indent: 2rem;
 }
 .skills__data {
   display: flex;
