@@ -553,7 +553,13 @@ img {
     margin-right: auto;
   }
   .home__img {
-    right: 15%;
+    right: 10%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .home__img {
+    right: 16%;
   }
 }
 
