@@ -250,7 +250,7 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 295px;
+  width: 245px;
 }
 
 /**************************************/
@@ -523,7 +523,7 @@ img {
     margin-right: var(--mb-4);
   }
   .home__img {
-    width: 457px;
+    width: 440px;
     bottom: 15%;
   }
 
@@ -559,7 +559,7 @@ img {
 
 @media screen and (min-width: 1400px) {
   .home__img {
-    right: 16%;
+    right: 20%;
   }
 }
 
