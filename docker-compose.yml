@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  web:
+    image: portfolio
+    ports:
+        - "1001:80"
